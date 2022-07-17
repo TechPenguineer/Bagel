@@ -6,7 +6,9 @@ class SYNTAX:
     DEFINE_COMMENT_LINE = "!#"
     DEFINE_NEW_BLOCK_START = "{"
     DEFINE_NEW_BLOCK_END = "}"
-
+    DEFINE_PROPERTY_START = "["
+    DEFINE_PROPERTY_END = "]"
+    
 class OPERATORS:
     SET_VALUE = "="
     ADD_VALUE = "+="
