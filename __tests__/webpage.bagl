@@ -2,3 +2,12 @@
 -$ ico = %"./img/icon.png":
 
 !# THIS IS A COMMENT LINE
+
+-container
+{
+    [CONTENT] = "Hello World":
+    [STYLE] = (
+        FONT: ariel:
+        TEXT_SIZE: 22px
+    )
+}
