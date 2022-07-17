@@ -8,7 +8,8 @@ class SYNTAX:
     DEFINE_NEW_BLOCK_END = "}"
     DEFINE_PROPERTY_START = "["
     DEFINE_PROPERTY_END = "]"
-    
+    DEFINE_PROPERTY_LIST_START = "("
+    DEFINE_PROPERTY_LIST_END = ")"
 class OPERATORS:
     SET_VALUE = "="
     ADD_VALUE = "+="
