@@ -3,4 +3,6 @@
 
 # Syntax
 
-`-$` sets a window propertie
+`-$` sets a window property 
+`%=` defines a file path
+`:` defines EOL ( end of line )
