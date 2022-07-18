@@ -9,6 +9,7 @@
 
 - [» Introduction](#👋-introduction)
 - - [» How To Use](#🤔-how-to-use)
+- [» Syntax](#☁️-syntax)
 -  [» Install](#🔽-download)
 
 # 👋 Introduction
@@ -20,6 +21,25 @@ Bagel is the newest and best transpiled web development language. Bagel is aimed
 Bagel has a built in interperter. The CLI trigger word is `bagel`. You can run `bagel build <file>` to transpiled to HTML. You can also run `bagel help`. 
 
 <br><br>
+
+# ☁️ Syntax
+## Setting Window Properties 
+`-$` will identify that youre changing a window property
+
+Property Types include:<br>
+`ico`, `title`, and soon to be `theme`
+
+### Example
+Setting Title:
+
+```-$ title = Hello World```
+
+Setting Icon
+
+```-$ ico = % ./img/icon.png```
+
+the `%` signifys youre working with a directory and not a url
+
 
 # 🔽 Download
 

@@ -41,7 +41,10 @@ def getWindowPropertyLexer(lines, windowPropertyIndicator):
     return [tokens, token_value, lineNumb]
 
 def returnWindowPropertyAsHtml(propertyType, value):
+    expected_property_types = ["title", "ico"]
     if propertyType == "title":
         return "<title>" + value + "</title>"
     if propertyType == "ico":
         return "<link rel='icon' href='" + value + "'>"
+    if propertyType not in expected_property_types:
+        print("Unknown Window Property Type: " + propertyType)
