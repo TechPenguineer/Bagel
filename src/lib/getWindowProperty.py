@@ -5,6 +5,11 @@ def getWindowPropertyLexer(lines, windowPropertyIndicator):
     for line in lines:
         lineNumb += 1
         cL = line.split(" ")
+        onToken = 0
+        propertyToken = 0
+        tokensOnLine = [cL]
         for token in cL:
+            onToken += 1
             if token == windowPropertyIndicator:
-                print( "Window Property Set on line: " + str(lineNumb))
+                propertyToken = onToken
+                print( "Window Property Set on line: " + str(lineNumb) + ": Property of " + str(tokensOnLine[0][ onToken ] ))
