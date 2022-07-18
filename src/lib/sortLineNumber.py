@@ -1,4 +1,4 @@
-def sortLineNumbers(data, lineNumbers):
+def sortLineNumbers(data):
     def natural_key(string_):
      try:
         import re
