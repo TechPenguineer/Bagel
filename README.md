@@ -57,9 +57,9 @@ the `%` signifys youre working with a directory and not a url
 
 **.bagl**
 
-`
+```
 -$ title = Hello World !# defines window title
-`
+```
 
 V V V V V V V V V V V V V V 
 
@@ -73,9 +73,9 @@ V V V V V V V V V V V V V V
 ## Expected Outcome
 **.bagl**
 
-`
+```
 -$ title = Hello World !# defines window title
-`
+```
 
 V V V V V V V V V V V V V V 
 
