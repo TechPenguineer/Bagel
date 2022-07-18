@@ -28,6 +28,7 @@ def addCommentLineLexer(lines, defineCommnetIndicator):
     tokens = []
     token_value = []
     lineNumb = 0
+    lineNumber = []
     tokensFound = 0
     for line in lines:
         lineNumb += 1
@@ -46,7 +47,8 @@ def addCommentLineLexer(lines, defineCommnetIndicator):
                  # print( "Comment line on line: " + str(lineNumb) + "\nStarting On Token " + str(onToken) + "\nEnding on token: " + str(lineLength))
                  #print('lineLength: ' + str(lineLength-onToken))
                  token_value.append( getAfterIndicator(cL, lineLength-onToken, onToken) )
-    return token_value
+                 lineNumber.append(lineNumb)
+    return [token_value, lineNumber]
 
-def returnCommentAsHtml(value):
-    return "<!-- " + value + " -->"
+def returnCommentAsHtml(lineNumb, value):
+    return str(lineNumb) + " <!-- " + value + " -->"

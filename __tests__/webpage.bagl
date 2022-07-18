@@ -1,7 +1,6 @@
 -$ title = Hello World
--$ ico = % ./img/icon.png
-
 !# THIS IS A COMMENT LINE
+-$ ico = % ./img/icon.png
 !# THIS IS A COMMENT LINE AGAIN
 
 -container
@@ -17,3 +16,4 @@
         )
     )
 }
+!# THIS IS A COMMENT LINE

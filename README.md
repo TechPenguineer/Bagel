@@ -18,7 +18,7 @@ Bagel is the newest and best transpiled web development language. Bagel is aimed
 <br><br>
  
 # 🤔 How To Use
-Bagel has a built in interperter. The CLI trigger word is `bagel`. You can run `bagel build <file>` to transpiled to HTML. You can also run `bagel help`. 
+Bagel has a built in interperter. The CLI trigger word is `bagel`. You can run `bagel build <file> <output_name>` to transpile to HTML. You can also run `bagel help`. 
 
 <br><br>
 

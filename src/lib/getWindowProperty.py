@@ -20,10 +20,11 @@ def getWindowPropertyLexer(lines, windowPropertyIndicator):
     # Finds Tokens in the lines
     tokens = []
     token_value = []
-    lineNumb = 0
+    lineNumb=[]
+    lineNumber = 0
     tokensFound = 0
     for line in lines:
-        lineNumb += 1
+        lineNumber += 1
         cL = line.split(" ")
         onToken = 0
         tokensOnLine = [cL]
@@ -37,14 +38,15 @@ def getWindowPropertyLexer(lines, windowPropertyIndicator):
                  if(cL[onToken+1]=="="):
                      token_value.append(acceptStringData(tokensOnLine[0]))
                  tokens.append(tokensOnLine[0][ onToken ])
-
+                 lineNumb.append(lineNumber)
+    
     return [tokens, token_value, lineNumb]
 
-def returnWindowPropertyAsHtml(propertyType, value):
+def returnWindowPropertyAsHtml(lineNumb, propertyType, value):
     expected_property_types = ["title", "ico"]
     if propertyType == "title":
-        return "<title>" + value + "</title>"
+        return  str(lineNumb) + " <title>" + value + "</title>"
     if propertyType == "ico":
-        return "<link rel='icon' href='" + value + "'>"
+        return str(lineNumb) + " <link rel='icon' href='" + value + "'>"
     if propertyType not in expected_property_types:
         print("Unknown Window Property Type: " + propertyType)
