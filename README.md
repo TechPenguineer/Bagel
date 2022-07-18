@@ -44,3 +44,43 @@ the `%` signifys youre working with a directory and not a url
 # 🔽 Download
 
 <p align="center">There is no download avaliable at this time</p>
+
+# ⌛ TODO
+- [x] Comment Lines
+- [x] Window Properties
+- [x] Main lexer system
+- [x] Parser
+- [x] Build Command
+- [ ] Align `.bagl` file lines to `.html` lines. Example:
+
+## Currently: 
+
+**.bagl**
+
+`
+-$ title = Hello World !# defines window title
+`
+
+V V V V V V V V V V V V V V 
+
+**.html**
+
+```
+<title>Hello World</title>
+<!-- defines window title -->
+```
+
+## Expected Outcome
+**.bagl**
+
+`
+-$ title = Hello World !# defines window title
+`
+
+V V V V V V V V V V V V V V 
+
+**.html**
+
+```
+<title>Hello World</title><!-- defines window title -->
+```
