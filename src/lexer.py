@@ -10,4 +10,4 @@ def lexer(lines):
     wpLength=getLengthOfList(wp)
     for i in range(wpLength):
         x=getWindowProperty.returnWindowPropertyAsHtml(wp[i], "hello world")
-        print(x)
+        # print(x)

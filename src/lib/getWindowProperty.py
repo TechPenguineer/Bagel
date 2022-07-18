@@ -4,12 +4,16 @@ def removeWhitespaceFromReader(dataList):
     dataList = [i for i in dataList if i]
     return dataList
 
-def acceptStringData(dataList):
-    quotes = '"'
-    dataList.split(quotes)
-
-class WINDOW_LEXER_CONST:
-    ...
+def acceptStringData(data):
+   dataIndex = data.index("=")
+   dataLength = len(data)
+   startPos = dataLength - 1 - dataIndex 
+   res = []
+   cI=0
+   for i in range(startPos):
+        res.append(data[i+startPos+1])
+   return res
+   
 def getWindowPropertyLexer(lines, windowPropertyIndicator):
 
     # Finds Tokens in the lines
@@ -20,14 +24,18 @@ def getWindowPropertyLexer(lines, windowPropertyIndicator):
         lineNumb += 1
         cL = line.split(" ")
         onToken = 0
-        tokensOnLine = [removeWhitespaceFromReader(cL)]
+        tokensOnLine = [cL]
         #print(tokensOnLine)
         for token in cL:
             onToken += 1
             if token == windowPropertyIndicator:
                  tokensFound += 1
-                 print( "Window Property Set on line: " + str(lineNumb) + ": Property of " + str(tokensOnLine[0][ onToken ] ) + " " + str(tokensFound))
+                 #print(cL)
+                 # print( "Window Property Set on line: " + str(lineNumb) + ": Property of " + str(tokensOnLine[0][ onToken ] ) + " " + str(tokensFound))
+                 if(cL[onToken+1]=="="):
+                     print(acceptStringData(tokensOnLine[0]))
                  tokens.append(tokensOnLine[0][ onToken ])
+
     return tokens
 
 def returnWindowPropertyAsHtml(propertyType, value):
