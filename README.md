@@ -5,11 +5,11 @@
 <h3 align="center"><b>The Bagel language is a simple language that is used to create an advanced, stylistic, and reactive web pages</h3>
 <br><br>
 <h1>📖 Table Of Contents
-<h3><a href="#introduction"><b>» Introduction</b></a></h3>
-<h3><a href="#about"><b>&emsp;&emsp;&emsp;» About The Project</b></a></h3>
-<h3><a href="#usage"><b>&emsp;&emsp;&emsp;» How to use</b></a></h3>
-<h3><a href="#installation"><b>» Installation</b></a></h3>
-<h3><a href="#windowsInstall"><b>&emsp;&emsp;&emsp;» Windows</b></a></h3>
+<h5><a href="#introduction"><b>» Introduction</b></a></h3>
+<h5><a href="#about"><b>&emsp;&emsp;&emsp;» About The Project</b></a></h3>
+<h5><a href="#usage"><b>&emsp;&emsp;&emsp;» How to use</b></a></h3>
+<h5><a href="#installation"><b>» Installation</b></a></h3>
+<h5><a href="#windowsInstall"><b>&emsp;&emsp;&emsp;» Windows</b></a></h3>
 <br><br><br>
 
 # 👋 Introduction
