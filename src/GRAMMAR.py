@@ -1,6 +1,6 @@
 class SYNTAX:
     DEFINE_PROPERTY = "-"
-    SPECIFY_WINDOW = "$"
+    DEFINE_WINDOW_PROPERTY = "-$"
     DEFINE_FILE_PATH = "%="
     DEFINE_EOL = ":"
     DEFINE_COMMENT_LINE = "!#"
