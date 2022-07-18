@@ -3,9 +3,7 @@
 # bagel build <file>
 # if ends with .bagl then build
 def build(argv):
-    if argv[1].endswith(".bagl"):
-        print("Building " + argv[1])
-        return True
-    else: 
-        print(argv[2])
-    
+    index=0
+    for arg in argv:
+        print(arg  + " " + str(index))
+        index+=1
