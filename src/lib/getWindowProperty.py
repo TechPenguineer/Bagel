@@ -38,7 +38,7 @@ def getWindowPropertyLexer(lines, windowPropertyIndicator):
                      token_value.append(acceptStringData(tokensOnLine[0]))
                  tokens.append(tokensOnLine[0][ onToken ])
 
-    return [tokens, token_value]
+    return [tokens, token_value, lineNumb]
 
 def returnWindowPropertyAsHtml(propertyType, value):
     if propertyType == "title":
