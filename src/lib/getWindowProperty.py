@@ -33,7 +33,7 @@ def getWindowPropertyLexer(lines, windowPropertyIndicator):
             if token == windowPropertyIndicator:
                  tokensFound += 1
                  #print(cL)
-                 # print( "Window Property Set on line: " + str(lineNumb) + ": Property of " + str(tokensOnLine[0][ onToken ] ) + " " + str(tokensFound))
+                 #print( "Window Property Set on line: " + str(lineNumb) + ": Property of " + str(tokensOnLine[0][ onToken ] ) + " " + str(tokensFound))
                  if(cL[onToken+1]=="="):
                      token_value.append(acceptStringData(tokensOnLine[0]))
                  tokens.append(tokensOnLine[0][ onToken ])
