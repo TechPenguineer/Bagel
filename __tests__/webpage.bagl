@@ -1,5 +1,5 @@
 -$ title = "Hello World":
--$ ico = %"./img/icon.png":
+-$  asfs = %"./img/icon.png":
 
 !# THIS IS A COMMENT LINE
 
