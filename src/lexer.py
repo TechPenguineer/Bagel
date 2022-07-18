@@ -2,8 +2,12 @@ import lib.getWindowProperty as getWindowProperty
 import GRAMMAR as GRAMMAR
 def getListOfLines(data):
     return data.split("\n")
+def getLengthOfList(data):
+    return len(data)
 
 def lexer(lines):
     wp=getWindowProperty.getWindowPropertyLexer(lines, GRAMMAR.SYNTAX.DEFINE_WINDOW_PROPERTY)
-    x=getWindowProperty.returnWindowPropertyAsHtml(wp[0], "hello world")
-    print(x)
+    wpLength=getLengthOfList(wp)
+    for i in range(wpLength):
+        x=getWindowProperty.returnWindowPropertyAsHtml(wp[i], "hello world")
+        print(x)
