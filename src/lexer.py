@@ -2,6 +2,7 @@ import lib.getWindowProperty as getWindowProperty
 import lib.commentLine  as commentLine
 import GRAMMAR as GRAMMAR
 import lib.sortLineNumber as sortLineNumber
+import lib.formatToFileType as formatToFileType
 def getListOfLines(data):
     return data.split("\n")
 def getLengthOfList(data):
@@ -29,8 +30,12 @@ def lexer(lines):
         ret_data.append(x)
         cIfCl += 1
 
+
     # Sorts the line numbers
     sl=sortLineNumber.sortLineNumbers(ret_data)
+    # Formats the lines
+    sl=formatToFileType.removeLineNumber(sl)
     print(sl)
+
     return sl
     
