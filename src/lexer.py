@@ -19,9 +19,14 @@ def lexer(lines):
     cIfWp = 0
     for type in wp[0]:
             x = getWindowProperty.returnWindowPropertyAsHtml(type, wp[1][cIfWp])
-            # print(x)
+            print(x)
             cIfWp += 1
         
     # Defines comment lines
     cl=commentLine.addCommentLineLexer(lines, GRAMMAR.SYNTAX.DEFINE_COMMENT_LINE)
-    print(cl)
+    clLength=getLengthOfList(cl)
+    cIfCl = 0
+    for type in cl:
+        x = commentLine.returnCommentAsHtml(type)
+        print(x)
+        cIfCl += 1
