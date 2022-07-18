@@ -8,6 +8,10 @@ def getLengthOfList(data):
 def lexer(lines):
     wp=getWindowProperty.getWindowPropertyLexer(lines, GRAMMAR.SYNTAX.DEFINE_WINDOW_PROPERTY)
     wpLength=getLengthOfList(wp)
-    for i in range(wpLength):
-        x=getWindowProperty.returnWindowPropertyAsHtml(wp[i], "hello world")
-        # print(x)
+    cIfWp = 0
+    for type in wp[0]:
+            x = getWindowProperty.returnWindowPropertyAsHtml(type, wp[1][cIfWp])
+            print(x)
+            cIfWp += 1
+            
+            
