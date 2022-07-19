@@ -10,7 +10,7 @@ def getLengthOfList(data):
 
 def lexer(lines):
     ret_data = []
-
+    ret = []
     # Defines window properties
     wp=getWindowProperty.getWindowPropertyLexer(lines, GRAMMAR.SYNTAX.DEFINE_WINDOW_PROPERTY)
     wpLength=getLengthOfList(wp)
@@ -35,7 +35,10 @@ def lexer(lines):
     sl=sortLineNumber.sortLineNumbers(ret_data)
     # Formats the lines
     sl=formatToFileType.removeLineNumber(sl)
-    
-
-    return sl
+    cI = 0
+    for ele in sl:
+        x = formatToFileType.makeString(sl[cI])
+        cI += 1
+        ret.append(x)
+    return ret
     
