@@ -46,7 +46,7 @@ Setting Icon
 
 # ⌛ Schedule
 
-***31%* completed of Version `0.1.0 Beta`**
+***31.57%* completed of Version `0.1.0 Beta`**
 
 1. - [x] Comment Lines
 2. - [x] Window Properties
