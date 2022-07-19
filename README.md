@@ -44,7 +44,7 @@ Setting Icon
 
 <p align="center">There is no download avaliable at this time</p>
 
-# ⌛ TODO
+# ⌛ Schedule
 - [x] Comment Lines
 - [x] Window Properties
 - [x] Main lexer system
@@ -63,3 +63,4 @@ Setting Icon
 - [ ] Improve error messages 
 - [ ] IDE language support 
 - [ ] Python to exe build support
+- [ ] Release Version 0.1.0 Beta
