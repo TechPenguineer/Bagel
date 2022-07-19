@@ -54,7 +54,7 @@ Setting Icon
 4. - [x] Parser
 5. - [x] Build Command
 6. - [x] Align `.bagl` file lines to `.html` lines. Example:
-7. - [ ] Auto Responsive Scaling 
+7. - [x] Auto Responsive Scaling 
 8. - [ ] Properties and Attributes
 9. - [ ] Add Blocks
 10. - [ ] Add Window Property
