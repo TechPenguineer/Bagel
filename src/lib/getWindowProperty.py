@@ -63,7 +63,7 @@ def returnWindowPropertyAsHtml(lineNumb, propertyType, value):
     if propertyType == "ico":
         return str(lineNumb) + " <link rel='icon' href='" + value + "'>"
     if propertyType == "responsive":
-        if(value == "scaling"):
+        if(value == "<$-scaling"):
             return str(lineNumb) + " <meta name='viewport' content='width=device-width, initial-scale=1.0'>"
         else:
             return str(lineNumb) + " <meta name='viewport' content='" + value + "'>"

@@ -1,6 +1,6 @@
 -$ title = Hello World
 -$ ico = ./img/icon.png
-
+-$ responsive = <$-scaling
 !# THIS IS A COMMENT LINE
 
 -body
