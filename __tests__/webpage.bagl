@@ -1,19 +1,20 @@
 -$ title = Hello World
-!# THIS IS A COMMENT LINE
 -$ ico = ./img/icon.png
-!# THIS IS A COMMENT LINE AGAIN
 
--container
-{
-    [CONTENT] = (
-        [TEXT] = (
-            [CONTENT] "Hello World":
-            [CLASS] "sample-text":
-            [STYLE] = (
+!# THIS IS A COMMENT LINE
+
+-body
+    -container
+        -[CONTENT]
+          -[TEXT] = (
+            -[CONTENT] Hello World  -!
+            -[CLASS] sample-text    -!
+            -[STYLE]
                 FONT: ariel:
                 TEXT_SIZE: 22px
-            )
-        )
-    )
-}
-!# THIS IS A COMMENT LINE
+            ![STYLE]
+        ![CONTENT]
+    !container
+!body
+        
+    
