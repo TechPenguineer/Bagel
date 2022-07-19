@@ -46,7 +46,7 @@ Setting Icon
 
 # ⌛ Schedule
 
-**31% completed of Version `0.1.0 Beta`**
+***31%* completed of Version `0.1.0 Beta`**
 
 1. - [x] Comment Lines
 2. - [x] Window Properties
@@ -67,3 +67,17 @@ Setting Icon
 17. - [ ] IDE language support 
 18. - [ ] Python to exe build support
 19. - [ ] Release Version 0.1.0 Beta
+
+# 🌿 Contributing
+
+**Contributng** to the *Bagel Project* is welcome to anyone! Help is wanted and needed although there are certain guidlines:
+
+`1.` The pull request must be resolving a bug, enhancing, or on the TODO list. 
+<br> 
+`2.` You must include comments on what everything does
+<br>
+`3.` If files are created the file name must be relative to its contents
+
+Thank you for your support!
+
+
