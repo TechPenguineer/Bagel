@@ -57,10 +57,15 @@ def getWindowPropertyLexer(lines, windowPropertyIndicator):
     return [tokens, token_value, lineNumb]
 
 def returnWindowPropertyAsHtml(lineNumb, propertyType, value):
-    expected_property_types = ["title", "ico"]
+    expected_property_types = ["title", "ico", "responsive"]
     if propertyType == "title":
         return  str(lineNumb) + " <title>" + value + "</title>"
     if propertyType == "ico":
         return str(lineNumb) + " <link rel='icon' href='" + value + "'>"
+    if propertyType == "responsive":
+        if(value == "scaling"):
+            return str(lineNumb) + " <meta name='viewport' content='width=device-width, initial-scale=1.0'>"
+        else:
+            return str(lineNumb) + " <meta name='viewport' content='" + value + "'>"
     if propertyType not in expected_property_types:
         print("Unknown Window Property Type: " + propertyType)
