@@ -19,8 +19,6 @@ def lexer(lines):
             x = getWindowProperty.returnWindowPropertyAsHtml(wp[2][cIfWp], type, wp[1][cIfWp])
             ret_data.append(x)
             cIfWp += 1
-        
-
     # Defines comment lines
     cl=commentLine.addCommentLineLexer(lines, GRAMMAR.SYNTAX.DEFINE_COMMENT_LINE)
     clLength=getLengthOfList(cl)
@@ -29,8 +27,6 @@ def lexer(lines):
         x = commentLine.returnCommentAsHtml(cl[1][cIfCl], type)
         ret_data.append(x)
         cIfCl += 1
-
-
     # Sorts the line numbers
     sl=sortLineNumber.sortLineNumbers(ret_data)
     # Formats the lines

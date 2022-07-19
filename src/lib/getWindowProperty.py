@@ -16,7 +16,7 @@ def acceptStringData(data):
             for x in range(len(data)-startPos):
                 ret.append(data[current_pos+x])
     retdata = ' '.join(ret)  
-    print(retdata)        
+    #print(retdata)        
     return retdata
 
    # dataLength = len(data)
