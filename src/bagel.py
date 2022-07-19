@@ -21,6 +21,7 @@ if(argv[0] == "bagel"):
         out = createFile.createHtmlFile(argv[3]+".html")
         data = getContent(argv[2])
         lOl = bagelLexer.getListOfLines(data)
-        bagelLexer.lexer(lOl)    
+        lexer = bagelLexer.lexer(lOl)    
+        writeToFile.writeToFileOnLine(argv[3]+".html", lexer)
       else:
         print("Unknown command")

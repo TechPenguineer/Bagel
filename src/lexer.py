@@ -35,7 +35,7 @@ def lexer(lines):
     sl=sortLineNumber.sortLineNumbers(ret_data)
     # Formats the lines
     sl=formatToFileType.removeLineNumber(sl)
-    print(sl)
+    
 
     return sl
     
