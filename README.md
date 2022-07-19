@@ -77,6 +77,8 @@ Setting Icon
 `2.` You must include comments on what everything does
 <br>
 `3.` If files are created the file name must be relative to its contents
+<br>
+`4.` If new libraries and or dependencies have been installed you must run `pip freeze > requirements.txt`
 
 Thank you for your support!
 
