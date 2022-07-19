@@ -45,22 +45,25 @@ Setting Icon
 <p align="center">There is no download avaliable at this time</p>
 
 # ⌛ Schedule
-- [x] Comment Lines
-- [x] Window Properties
-- [x] Main lexer system
-- [x] Parser
-- [x] Build Command
-- [x] Align `.bagl` file lines to `.html` lines. Example:
-- [ ] Auto Responsive Scaling 
-- [ ] Properties and Attributes
-- [ ] Add Blocks
-- [ ] Add Window Property
-- [ ] Styling Library 
-- [ ] Styling and theme prefabs 
-- [ ] Custom Prefab creation and loading 
-- [ ] More CLI commands
-- [ ] Improve Build Log
-- [ ] Improve error messages 
-- [ ] IDE language support 
-- [ ] Python to exe build support
-- [ ] Release Version 0.1.0 Beta
+
+**31% completed of Version `0.1.0 Beta`**
+
+1. - [x] Comment Lines
+2. - [x] Window Properties
+3. - [x] Main lexer system
+4. - [x] Parser
+5. - [x] Build Command
+6. - [x] Align `.bagl` file lines to `.html` lines. Example:
+7. - [ ] Auto Responsive Scaling 
+8. - [ ] Properties and Attributes
+9. - [ ] Add Blocks
+10. - [ ] Add Window Property
+11. - [ ] Styling Library 
+12. - [ ] Styling and theme prefabs 
+13. - [ ] Custom Prefab creation and loading 
+14. - [ ] More CLI commands
+15. - [ ] Improve Build Log
+16. - [ ] Improve error messages 
+17. - [ ] IDE language support 
+18. - [ ] Python to exe build support
+19. - [ ] Release Version 0.1.0 Beta
