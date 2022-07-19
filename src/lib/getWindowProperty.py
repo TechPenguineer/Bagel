@@ -5,15 +5,28 @@ def removeWhitespaceFromReader(dataList):
     return dataList
 
 def acceptStringData(data):
-   dataIndex = data.index("=")
-   dataLength = len(data)
-   startPos = dataLength - 1 - dataIndex 
-   res = []
-   cI=0
-   for i in range(startPos):
-        res.append(data[i+startPos+1])
-   final = " ".join(res)
-   return final
+    # = : 3   tL : 11         
+    dataIndex = data.index("=")
+    current_pos = 0
+    startPos = dataIndex+1
+    ret = []
+    for ele in data:
+        current_pos += 1
+        if current_pos == startPos:
+            for x in range(len(data)-startPos):
+                ret.append(data[current_pos+x])
+    retdata = ' '.join(ret)  
+    print(retdata)        
+    return retdata
+
+   # dataLength = len(data)
+   # startPos = dataLength - 1 - dataIndex 
+   # res = []
+   # cI=0
+   # for i in range(startPos):
+   #      res.append(data[i+startPos])
+   # final = " ".join(res)
+   # return final
 
 def getWindowPropertyLexer(lines, windowPropertyIndicator):
 
@@ -32,6 +45,7 @@ def getWindowPropertyLexer(lines, windowPropertyIndicator):
         for token in cL:
             onToken += 1
             if token == windowPropertyIndicator:
+                 equals_token_loc = 0
                  tokensFound += 1
                  #print(cL)
                  #print( "Window Property Set on line: " + str(lineNumb) + ": Property of " + str(tokensOnLine[0][ onToken ] ) + " " + str(tokensFound))

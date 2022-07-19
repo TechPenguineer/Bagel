@@ -15,6 +15,7 @@ def getContent(path):
 argv = getInput.startShell()
 # print(argv)
 
+#try:
 if(argv[0] == "bagel"):
     if(argv[1] == "build"):
       if(argv[2]!=None):
@@ -25,3 +26,7 @@ if(argv[0] == "bagel"):
         writeToFile.writeToFileOnLine(argv[3]+".html", lexer)
       else:
         print("Unknown command")
+#except TypeError as e:
+#  print(e)
+#except IndexError:
+#  print("Unknown command") 
