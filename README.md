@@ -51,3 +51,15 @@ Setting Icon
 - [x] Parser
 - [x] Build Command
 - [x] Align `.bagl` file lines to `.html` lines. Example:
+- [ ] Auto Responsive Scaling 
+- [ ] Properties and Attributes
+- [ ] Add Blocks
+- [ ] Add Window Property
+- [ ] Styling Library 
+- [ ] Styling and theme prefabs 
+- [ ] Custom Prefab creation and loading 
+- [ ] More CLI commands
+- [ ] Improve Build Log
+- [ ] Improve error messages 
+- [ ] IDE language support 
+- [ ] Python to exe build support

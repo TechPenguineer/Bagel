@@ -6,7 +6,7 @@
 -body
     -container
         -[CONTENT]
-          -[TEXT] = (
+          -[TEXT]
             -[CONTENT] Hello World  -!
             -[CLASS] sample-text    -!
             -[STYLE]
